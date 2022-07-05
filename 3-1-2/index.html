@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg-nepal.github.io/data/en',
+  remoteDataBaseUrl: 'https://sdgs-nepal.github.io/prod-data/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -115,8 +115,6 @@ var translations = {
         <meta name="description" content="">
         <meta property="og:description" content="">
         
-        <meta name="robots" content="noindex, nofollow">
-        
         <link rel="canonical" href="/">
 
         <!--[if IE 9]>
@@ -141,7 +139,7 @@ var translations = {
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20220627155213">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20220705015748">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -444,9 +442,9 @@ data-event-label="high"
 
   <div id="datatables">
 
-    <a href="https://open-sdg-nepal.github.io/data/en/headline/3-1-2.csv" class="btn btn-primary btn-download" download="indicator_3-1-2.csv" tabindex="0" role="button">Download Headline CSV</a>
+    <a href="https://sdgs-nepal.github.io/prod-data/en/headline/3-1-2.csv" class="btn btn-primary btn-download" download="indicator_3-1-2.csv" tabindex="0" role="button">Download Headline CSV</a>
 
-    <a href="https://open-sdg-nepal.github.io/data/en/data/3-1-2.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_3-1-2.csv' tabindex='0' role='button'>Download Source CSV</a>
+    <a href="https://sdgs-nepal.github.io/prod-data/en/data/3-1-2.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_3-1-2.csv' tabindex='0' role='button'>Download Source CSV</a>
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
@@ -773,10 +771,6 @@ data-event-label="Change to Sources tab"
 </li>
   
     
-    
-        <li role="presentation" class="nav-item">
-            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Edit</a>
-        </li>
     
 </ul>
 
@@ -1343,30 +1337,6 @@ data-event-label="Change to Sources tab"
 </div>
     
     
-        <div role="tabpanel" class="tab-pane" id="edit">
-            <div class="edit-container">
-  
-  
-
-  
-  
-
-
-  <a class="btn btn-primary" href="https://github.com/open-sdg-nepal/data/tree/develop/data">Edit Data</a>
-  
-
-  
-  <a class="btn btn-primary" href="https://github.com/open-sdg-nepal/data/tree/develop/meta">Edit Metadata</a>
-  
-
-  
-  <a class="btn btn-primary" href="config">Edit Configuration</a>
-  
-
-</div>
-
-        </div>
-    
 </div>
   
 </div>
@@ -1407,10 +1377,6 @@ data-event-label="Change to Sources tab"
                         </li>
                         
                         
-                        
-                        <li>
-                            <a href="/config">Configuration</a>
-                        </li>
                         </ul>
                 </div>
             </div>
@@ -1453,7 +1419,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20220627155213'></script>
+<script src='/assets/js/sdg.js?v=20220705015748'></script>
 
 <script>
     new indicatorInit();
